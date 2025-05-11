@@ -1,0 +1,199 @@
+type: collection.insomnia.rest/5.0
+name: Imported Workspace
+meta:
+  id: wrk_a6c86fb0d2154639a20cfd7c714d11ff
+  created: 1746286352251
+  modified: 1746286352251
+collection:
+  - url: http://localhost:8080/usuarios/1
+    name: Atualizar Usuários
+    meta:
+      id: req_8f014bbd03e1499da6ebb96ad4872c13
+      created: 1746286362484
+      modified: 1746893187500
+      isPrivate: false
+      sortKey: -1746286362484
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": 1,
+          "informacoesPessoais": {
+            "nomeCompleto": "Ítalo Pereira de Brito Alterado",
+            "genero": "M",
+            "email": "pbitalo@hotmail.com",
+            "telefone": "(11) 9 7891 1354",
+            "dataNascimento": "1987-04-15",
+            "cpf": "057.847.334-86",
+            "rg": "165165"
+          },
+          "endereco": {
+            "rua": "Praça da Liberdade",
+            "numero": "789",
+            "complemento": "Apto 101",
+            "bairro": "Centro",
+            "cidade": "Belo Horizonte",
+            "estado": "MG",
+            "cep": "30001-000"
+          },
+          "informacoesProfissionais": {
+            "tipoUsuario": "C",
+            "status": "A",
+            "cargo": "Gerente",
+            "dataAdmissao": "1987-04-15",
+            "setor": "Contabilidade",
+            "temaPreferido": "P"
+          },
+          "avatar": "dasdadas"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/usuarios
+    name: Cadastrar Usuário
+    meta:
+      id: req_3b8c8480e30d40d4b460a9f840693d74
+      created: 1746286433018
+      modified: 1746976783831
+      isPrivate: false
+      sortKey: -1746286433018
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "informacoesPessoais": {
+            "nomeCompleto": "Ítalo Pereira de Brito",
+            "genero": "M",
+            "email": "pbitalo@hotmail.com",
+            "telefone": "(11) 9 7891 1354",
+            "dataNascimento": "1987-04-15",
+            "cpf": "057.847.334-86",
+            "rg": "165165"
+          },
+          "endereco": {
+            "rua": "Praça da Liberdade",
+            "numero": "789",
+            "complemento": "Apto 101",
+            "bairro": "Centro",
+            "cidade": "Belo Horizonte",
+            "estado": "MG",
+            "cep": "30001-000"
+          },
+          "informacoesProfissionais": {
+            "tipoUsuario": "C",
+            "status": "A",
+            "cargo": "Gerente",
+            "dataAdmissao": "1987-04-15",
+            "setor": "Contabilidade",
+            "temaPreferido": "P"
+          },
+          "avatar": "dasdadas"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/usuarios/1
+    name: Buscar Por Id Usuário
+    meta:
+      id: req_90cab8e6fc7543deb74036d40cd98ed4
+      created: 1746369173073
+      modified: 1746893172892
+      isPrivate: false
+      sortKey: -1746369173073
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/usuarios
+    name: Buscar Todos Usuários
+    meta:
+      id: req_4c774daa14f6444cb725571c381ea1db
+      created: 1746369188413
+      modified: 1746369319760
+      isPrivate: false
+      sortKey: -1746369188413
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/usuarios/5
+    name: Deletar Usuário
+    meta:
+      id: req_eedeb08c2bde4aa39f091c964150a3e0
+      created: 1746369230003
+      modified: 1746893177182
+      isPrivate: false
+      sortKey: -1746327803045.5
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_315fb74ca3176b582cd127933a75eaa04111733b
+    created: 1746286352261
+    modified: 1746369063561
+  cookies:
+    - key: JSESSIONID
+      value: A6C39D95BCFEA530994109A384B02897
+      domain: localhost
+      path: /
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-05-03T20:10:16.959Z
+      lastAccessed: 2025-05-04T14:31:03.561Z
+      id: 0ad1c166-2435-4e2f-82d1-ebd099c7f061
+environments:
+  name: Base Environment
+  meta:
+    id: env_315fb74ca3176b582cd127933a75eaa04111733b
+    created: 1746286352259
+    modified: 1746286352259
+    isPrivate: false
