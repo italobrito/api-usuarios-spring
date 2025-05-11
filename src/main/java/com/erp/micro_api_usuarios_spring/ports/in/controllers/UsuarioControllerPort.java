@@ -2,6 +2,7 @@ package com.erp.micro_api_usuarios_spring.ports.in.controllers;
 
 import com.erp.micro_api_usuarios_spring.adapters.in.responses.AtualizarUsuarioResponse;
 import com.erp.micro_api_usuarios_spring.adapters.in.responses.CadastrarUsuarioResponse;
+import com.erp.micro_api_usuarios_spring.adapters.in.responses.UsuarioReduzidoResponse;
 import com.erp.micro_api_usuarios_spring.domain.entities.Usuario;
 import org.springframework.http.ResponseEntity;
 
@@ -15,7 +16,7 @@ public interface UsuarioControllerPort {
 
     ResponseEntity<Void> deletar(Long id);
 
-    ResponseEntity<List<Usuario>> buscarTodos();
+    ResponseEntity<List<UsuarioReduzidoResponse>> buscarTodos();
 
     ResponseEntity<Usuario> buscarPorId(Long id);
 }

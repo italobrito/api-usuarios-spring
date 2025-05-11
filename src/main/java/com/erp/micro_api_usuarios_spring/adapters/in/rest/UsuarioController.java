@@ -2,6 +2,7 @@ package com.erp.micro_api_usuarios_spring.adapters.in.rest;
 
 import com.erp.micro_api_usuarios_spring.adapters.in.responses.AtualizarUsuarioResponse;
 import com.erp.micro_api_usuarios_spring.adapters.in.responses.CadastrarUsuarioResponse;
+import com.erp.micro_api_usuarios_spring.adapters.in.responses.UsuarioReduzidoResponse;
 import com.erp.micro_api_usuarios_spring.domain.entities.Usuario;
 import com.erp.micro_api_usuarios_spring.ports.in.controllers.UsuarioControllerPort;
 import com.erp.micro_api_usuarios_spring.ports.in.usecases.AtualizarUsuarioUseCasePort;
@@ -53,7 +54,7 @@ public class UsuarioController implements UsuarioControllerPort {
     }
 
     @GetMapping
-    public ResponseEntity<List<Usuario>> buscarTodos() {
+    public ResponseEntity<List<UsuarioReduzidoResponse>> buscarTodos() {
         return ResponseEntity.ok(buscarTodosUsuariosPort.execute());
     }
 
